@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "404 Notfound";
+}
+
+<div class="container">
+    <div class="card card-register mx-auto mt-5">
+        <div class="card-header">@ViewData["Title"]</div>
+        <div class="card-body">
+            <h1 class="text-danger">404 - Not found</h1>
+            <h3>The target url you view is not found.</h3>
+            <p>The target URL you viewed is not found..</p>
+        </div>
+        <a class="card-footer clearfix small z-1" href="@Values.WWWServerAddress">
+            <span class="float-left">Back to Home</span>
+            <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </a>
+    </div>
+</div>

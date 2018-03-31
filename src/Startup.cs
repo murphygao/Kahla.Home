@@ -29,8 +29,9 @@ namespace Kahla.Home
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
                 app.UseEnforceHttps();
+                app.UseExceptionHandler("/Error/ServerException");
+                app.UseStatusCodePagesWithReExecute("/Error/Code{0}");
             }
             app.UseStaticFiles();
             app.UseAuthentication();
